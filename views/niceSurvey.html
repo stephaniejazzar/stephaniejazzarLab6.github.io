@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <title>Questionnaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <link href="/assets/style.css" type="text/css" rel="stylesheet">
+
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  </head>
+
+  <body>
+
+	<div class="container border bg-light text-black" id="survey">
+
+    <h1 id="survey-title">Survey</h1>
+    <p class="p1">The following survey is based on the user interface of the Sephora website: </p>
+    <a class="link" href="https://www.sephora.com/ca/en/">Visit the Sephora website for yourself!</a><br><br>
+  </div>
+    <div class="container-md p-3 my-3 border bg-light text-black" id="surveypicture">
+    <a class="image-link" href="https://www.sephora.com/ca/en/"><img class="sephora" height="400" width="800"></a>
+   <br><br>
+
+
+    <form>
+      <h2>Which aspect(s) of the web page stood out the most to you?</h2>
+
+      <input type="checkbox" name="color" value="The colors">The colors<br>
+      <input type="checkbox" name="color" value="The pictures">The pictures<br>
+      <input type="checkbox" name="color" value="The layout">The layout<br>
+      <input type="checkbox" name="color" value="The menu bar">The menu bar<br>
+      <input type="checkbox" name="color" value="Others">Others<br><br>
+      <br>
+
+      <h2>How efficiently did you find the product(s) you were looking for?</h2>
+       <input type="radio" name="efficiency" value="Not efficiently">Not efficiently<br>
+       <input type="radio" name="efficiency" value="Neutral">Neutral<br>
+       <input type="radio" name="efficiency" value="Efficiently">Efficiently<br>
+       <input type="radio" name="efficiency" value="Very efficiently">Very efficiently<br><br>
+
+      <h2>Which word best describes the checkout process? </h2>
+      <input type="radio" name="rating" value="Quick">Quick<br>
+       <input type="radio" name="rating" value="Easy">Easy<br>
+       <input type="radio" name="rating" value="Reliable">Reliable<br>
+       <input type="radio" name="rating" value="Coherent">Coherent<br>
+       <input type="radio" name="rating" value="None of the above">None of the above <br><br>
+
+
+      <h2>How would you rate the usability of the website ?</h2>
+      <img>
+      <tr>
+         <td><label>Very Challenging </label></td>
+         <td><input type="radio" name="usability" value="one"> </td>
+         <td><input type="radio" name="usability" value="two"> </td>
+         <td><input type="radio" name="usability" value="three"> </td>
+         <td><input type="radio" name="usability" value="four"> </td>
+         <td><input type="radio" name="usability" value="five"> </td>
+         <td><label> Very Easy</label></td>
+     </tr><br><br>
+
+      <h2>How would you describe this section of the web page (the main menu)?</h2>
+      <img class="sephoraMenu" height="400" width="755"><br>
+      Please provide your answer is the box below:<br>
+      <input type="text" name="fruit" placeholder="answer..." required />
+      <br>
+      <br>
+
+
+      <h2>Would you shop using this website again?</h2>
+
+      <select name="animal">
+        <option value="Yes" selected="selected">Yes</option>
+        <option value="No" selected="selected">No</option>
+        <option value="Maybe" selected="selected">Maybe</option>
+      </select>
+      <br>
+      <br>
+      <button type="submit" class="btn btn-warning" id="bb">Submit</button>
+      <p id="thanks"></p>
+    </form>
+    </div>
+	<script src="/assets/action.js"></script>
+  </body>
+</html>

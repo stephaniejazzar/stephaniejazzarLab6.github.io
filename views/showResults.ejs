@@ -1,0 +1,46 @@
+<html lang="en-US">
+<head>
+    <title>Survey Analysis</title>
+</head>
+
+<body>
+    <h1>Survey analysis</h1>
+    <h2>Which aspect(s) of the web page stood out the most to you?</h2>
+    <ul>
+    <% for (var i=0; i<results[0].length; i++){ %>
+        <li><%= results[0][i].color %> :  <%= results[0][i].count %></li>
+    <% } %>
+    </ul>
+    <h2>How efficiently did you find the product(s) you were looking for?</h2>
+    <ul>
+    <% for (var i=0; i<results[1].length; i++){ %>
+        <li><%= results[1][i].efficiency %> :  <%= results[1][i].count %></li>
+    <% } %>
+    </ul>
+    <h2>Which word best describes the checkout process?</h2>
+    <ul>
+    <% for (var i=0; i<results[2].length; i++){ %>
+        <li><%= results[2][i].rating %> :  <%= results[2][i].count %></li>
+    <% } %>
+    </ul>
+    <h2>How would you rate the usability of the website?</h2>
+    <ul>
+    <% for (var i=0; i<results[3].length; i++){ %>
+        <li><%= results[3][i].usability %> :  <%= results[3][i].count %></li>
+    <% } %>
+    </ul>
+
+    <h2>How would you describe this section of the web page (the main menu)?</h2>
+    <ul>
+    <% for (var i=0; i<results[4].length; i++){ %>
+        <li><%= results[4][i].fruit %> :  <%= results[4][i].count %></li>
+    <% } %>
+    </ul>
+    <h2>Would you shop using this website again?</h2>
+    <ul>
+    <% for (var i=0; i<results[5].length; i++){ %>
+        <li><%= results[5][i].animal %> :  <%= results[5][i].count %></li>
+    <% } %>
+    </ul>
+</body>
+</html>
