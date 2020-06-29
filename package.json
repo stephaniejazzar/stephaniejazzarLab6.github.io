@@ -1,7 +1,7 @@
 {
   "name": "survey",
   "version": "1.0.0",
-  "description": "A survey on color preference",
+  "description": "A survey on Sephora's website",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
